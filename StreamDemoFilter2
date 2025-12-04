@@ -1,0 +1,10 @@
+import java.util.*;
+class StreamDemoFilter2{
+public static void main(String arg[]){
+List<Integer> nums = Arrays.asList(160,170,180,2020,2021,2022,2024,2025);
+nums
+.stream()
+.filter(n->n>99 && n<1000)
+.forEach(n->System.out.println(n));
+}
+}
