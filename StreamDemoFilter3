@@ -1,0 +1,13 @@
+import java.util.*;
+class StreamDemoFilter3{
+public static void main(String arg[]){
+List<String> names = Arrays.asList("ram", "krishna", "arjun", "nithin");
+
+List<String> result =
+names.stream()
+.map(s -> s.toUpperCase())
+.toList();
+
+System.out.println(result);
+}
+}
